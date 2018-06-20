@@ -38,3 +38,27 @@ function resetColor() {
    resetColorButton.disabled = true;
 
 }
+
+const enlace = document.createElement('p');
+enlace.className = 'Esta-es-una-clase';
+enlace.id = 'idLoco';
+enlace.textContent = 'Esto es lo que contiene como texto el parrafo';
+enlace.style.backgroundColor = 'brown';
+
+console.log(enlace);
+
+/*Creates a new paragraph element and inserts it into the dom */
+function createParagraph() {
+
+   const newParagraph = document.createElement('p');
+   let text = document.getElementById('nodeText').value;
+   newParagraph.textContent = text;
+   
+   if (text.trim().length == 0) {
+      alert('You must enter a text');
+   } else {
+      document.querySelector('#newElementContainer').appendChild(newParagraph);
+      document.getElementById('nodeText').value = '';
+   }
+
+}

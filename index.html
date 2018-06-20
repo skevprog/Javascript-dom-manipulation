@@ -15,9 +15,9 @@
       <h1>Javascript Power</h1>
    </header>
 
-   <article>
+   <section>
 
-      <h1>Changing styles with plain Javascript</h1>
+      <h2>Changing styles with plain Javascript</h2>
 
       <p id="firstLorem">
          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem odio enim impedit excepturi vel libero quae vero labore voluptates
@@ -32,8 +32,24 @@
          <button id="resetColor" class="button" onclick="resetColor()" disabled>Reset color</button>
       </div>
 
+   </section>
 
-   </article>
+   <section>
+
+      <h2>Create a paragraph</h2>
+
+      <p>
+         <label for="nodeText">New Paragraph text</label>
+         <input type="text" id="nodeText" required>
+      </p>
+
+      <button onclick="createParagraph()">Create new Paragraph</button>
+
+      <div id="newElementContainer">
+
+      </div>
+
+   </section>
 
    <footer>
 
