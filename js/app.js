@@ -39,14 +39,6 @@ function resetColor() {
 
 }
 
-const enlace = document.createElement('p');
-enlace.className = 'Esta-es-una-clase';
-enlace.id = 'idLoco';
-enlace.textContent = 'Esto es lo que contiene como texto el parrafo';
-enlace.style.backgroundColor = 'brown';
-
-console.log(enlace);
-
 /*Creates a new paragraph element and inserts it into the dom */
 function createParagraph() {
 
