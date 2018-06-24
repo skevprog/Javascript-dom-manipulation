@@ -5,7 +5,7 @@ const firstLorem = document.getElementById('firstLorem');
 
 var colorValue = document.getElementById('colorValue');
 
-
+window.document.onload = removeLiElement();
 /*Check if the color input has value for enable the changeColor button*/
 function typing() {
 
@@ -45,7 +45,7 @@ function createParagraph() {
    const newParagraph = document.createElement('p');
    let text = document.getElementById('nodeText').value;
    newParagraph.textContent = text;
-   
+
    if (text.trim().length == 0) {
       alert('You must enter a text');
    } else {
@@ -54,3 +54,20 @@ function createParagraph() {
    }
 
 }
+
+/*Removes a li element by clicking it */
+function removeLiElement() {
+
+   let liElements = document.querySelectorAll('#languages-list > li');  //returns an array of li elements
+
+   for (let i = 0; i < liElements.length; i++) {
+      liElements[i].style.cursor = 'pointer';
+      liElements[i].addEventListener('click', () =>
+         liElements[i].remove()
+      );
+
+   }
+
+}
+
+

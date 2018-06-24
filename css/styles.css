@@ -1,7 +1,36 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .buttons-container {
   padding: 1rem 0; 
 }
 
 label {
   display: block;
+}
+
+ul > li {
+  width: 10%;
+}
+
+.instructions {
+  font-size: .9em;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -11,48 +11,68 @@
 
 <body>
 
-   <header>
+   <header class="header">
       <h1>Javascript Power</h1>
    </header>
 
-   <article>
+   <main class="container">
 
-      <h2>Changing styles with plain Javascript</h2>
+      <article>
 
-      <p id="firstLorem">
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem odio enim impedit excepturi vel libero quae vero labore voluptates
-         maxime eligendi omnis dicta ad fuga, provident nostrum nihil in ducimus.
-      </p>
+         <h2>Changing styles with plain Javascript</h2>
 
-      <input type="text" id="colorValue" placeholder="Color" onkeyup="typing()">
+         <p id="firstLorem">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem odio enim impedit excepturi vel libero quae vero labore voluptates
+            maxime eligendi omnis dicta ad fuga, provident nostrum nihil in ducimus.
+         </p>
 
-      <div id="buttons" class="buttons-container">
-         <button id="changeColor" class="button" onclick="changeColor()" disabled>Change Color</button>
+         <input type="text" id="colorValue" placeholder="Color" onkeyup="typing()">
 
-         <button id="resetColor" class="button" onclick="resetColor()" disabled>Reset color</button>
-      </div>
+         <div id="buttons" class="buttons-container">
+            <button id="changeColor" class="button" onclick="changeColor()" disabled>Change Color</button>
 
-   </article>
+            <button id="resetColor" class="button" onclick="resetColor()" disabled>Reset color</button>
+         </div>
 
-   <article>
+      </article>
 
-      <h2>Create a paragraph</h2>
+      <article>
 
-      <p>
-         <label for="nodeText">New Paragraph text</label>
-         <input type="text" id="nodeText" required>
-      </p>
+         <h2>Create a paragraph</h2>
 
-      <button onclick="createParagraph()">Create new Paragraph</button>
+         <p>
+            <label for="nodeText">New Paragraph text</label>
+            <input type="text" id="nodeText" required>
+         </p>
 
-      <div id="newElementContainer">
+         <button onclick="createParagraph()">Create new Paragraph</button>
 
-      </div>
+         <div id="newElementContainer">
 
-   </article>
+         </div>
 
-   <footer>
+      </article>
 
+      <article>
+
+         <h2>Removes elements</h2>
+
+         <span class="instructions">(Click over the language you want to remove)</span>
+
+         <ul id="languages-list">
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>Sql</li>
+         </ul>
+
+      </article>
+
+   </main>
+
+   <footer class="footer">
+      This site was developed by skevprog.
    </footer>
 
    <script src="js/app.js"></script>
