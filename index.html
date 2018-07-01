@@ -42,7 +42,7 @@
 
          <p>
             <label for="nodeText">New Paragraph text</label>
-            <input type="text" id="nodeText" required>
+            <textarea rows="4" cols="50" id="nodeText"></textarea>
          </p>
 
          <button onclick="createParagraph()">Create new Paragraph</button>
@@ -55,7 +55,7 @@
 
       <article>
 
-         <h2>Removes elements</h2>
+         <h2>Remove elements</h2>
 
          <span class="instructions">(Click over the language you want to remove)</span>
 
@@ -66,6 +66,19 @@
             <li>C#</li>
             <li>Sql</li>
          </ul>
+
+      </article>
+
+      <article>
+
+         <h2>Counter</h2>
+         
+         <p>The value of the counter is:
+            <span id="counterValue"></span>
+         </p>
+
+         <button onclick="increaseCounter()">Increase</button>
+         <button onclick="decreaseCounter()">Decrease</button>
 
       </article>
 

@@ -70,4 +70,24 @@ function removeLiElement() {
 
 }
 
+/*Counter*/
+
+let counterValue = 0;
+let counterElement = document.getElementById('counterValue');
+counterElement.textContent = counterValue;
+
+function increaseCounter() {
+   counterValue++;
+   counterElement.textContent = counterValue;
+}
+
+function decreaseCounter() {
+   if(counterValue <= 0) {
+      alert('For decrease the counter value, it must have a value greater than "0" ');
+   } else {
+      counterValue--;
+   }
+   counterElement.textContent = counterValue;
+}
+
 
