@@ -34,3 +34,25 @@ ul > li {
   justify-content: center;
   align-items: center;
 }
+
+#modal {
+  visibility: hidden;
+  position: fixed;
+  top: 17%;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 50%;
+  margin: 0 auto;
+  background: gray;
+  border: solid 2px black;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal>.modal-content {
+  font-size: 4em;
+
+}

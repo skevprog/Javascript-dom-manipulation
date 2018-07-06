@@ -90,4 +90,13 @@ function decreaseCounter() {
    counterElement.textContent = counterValue;
 }
 
+const Modal = document.getElementById('modal');
+/* Show Modal */
+function showModal() {   
+   Modal.style.visibility = 'visible';
+}
 
+/* Hide Modal */
+function hideModal() {
+   Modal.style.visibility = 'hidden';
+}
