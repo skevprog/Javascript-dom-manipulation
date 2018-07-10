@@ -56,3 +56,25 @@ ul > li {
   font-size: 4em;
 
 }
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.box:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.change-background {
+  
+  background-color: red;
+}

@@ -1,4 +1,3 @@
-
 const changeColorButton = document.getElementById('changeColor');
 const resetColorButton = document.getElementById('resetColor');
 const firstLorem = document.getElementById('firstLorem');
@@ -58,7 +57,7 @@ function createParagraph() {
 /*Removes a li element by clicking it */
 function removeLiElement() {
 
-   let liElements = document.querySelectorAll('#languages-list > li');  //returns an array of li elements
+   let liElements = document.querySelectorAll('#languages-list > li'); //returns an array of li elements
 
    for (let i = 0; i < liElements.length; i++) {
       liElements[i].style.cursor = 'pointer';
@@ -82,7 +81,7 @@ function increaseCounter() {
 }
 
 function decreaseCounter() {
-   if(counterValue <= 0) {
+   if (counterValue <= 0) {
       alert('For decrease the counter value, it must have a value greater than "0" ');
    } else {
       counterValue--;
@@ -92,7 +91,7 @@ function decreaseCounter() {
 
 const Modal = document.getElementById('modal');
 /* Show Modal */
-function showModal() {   
+function showModal() {
    Modal.style.visibility = 'visible';
 }
 
