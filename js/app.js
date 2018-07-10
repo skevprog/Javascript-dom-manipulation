@@ -100,3 +100,14 @@ function showModal() {
 function hideModal() {
    Modal.style.visibility = 'hidden';
 }
+
+/* Add element */
+function addOne() {
+ let elementValue = document.getElementById('element').value;
+ let li = document.createElement('li');
+ let list = document.getElementById('list');
+
+ li.textContent = elementValue;
+ list.appendChild(li);
+ document.getElementById('element').value = ''
+}
