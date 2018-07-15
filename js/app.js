@@ -100,13 +100,27 @@ function hideModal() {
    Modal.style.visibility = 'hidden';
 }
 
+/* Change color of the box */
+function changeBoxColor(el) {
+   if (el.classList.contains('change-background')) {
+      el.classList.remove('change-background');
+   } else {
+      el.classList.add('change-background');
+   }
+}
 /* Add element */
 function addOne() {
- let elementValue = document.getElementById('element').value;
- let li = document.createElement('li');
- let list = document.getElementById('list');
+   let elementValue = document.getElementById('element').value;
+   let li = document.createElement('li');
+   let list = document.getElementById('list');
 
- li.textContent = elementValue;
- list.appendChild(li);
- document.getElementById('element').value = ''
+   li.textContent = elementValue;
+   list.appendChild(li);
+   document.getElementById('element').value = ''
 }
+
+
+//localStorage.setItem('nombres', 'Juan')
+//localStorage.setItem('nombre', 'Juanma');
+//sessionStorage.setItem('user', 'block')
+localStorage.remove

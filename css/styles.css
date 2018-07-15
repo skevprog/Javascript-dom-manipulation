@@ -1,16 +1,25 @@
 body, html {
   margin: 0;
   padding: 0;
+  background-color: #b8eaef;
+  font-family: 'Roboto', sans-serif;
 }
 
-.header {
+.header { 
+  overflow: hidden;
   text-align: center;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .container {
   width: 80%;
   margin: 0 auto;
 }
+
 
 .buttons-container {
   padding: 1rem 0; 
@@ -26,6 +35,11 @@ ul > li {
 
 .instructions {
   font-size: .9em;
+}
+
+.header, .footer {
+  color: #ffffff;
+  background-color: #425456;
 }
 
 .footer {
@@ -57,24 +71,30 @@ ul > li {
 
 }
 
-.wrapper {
-  display: flex;
-  justify-content: flex-start;
-}
 
 .box {
   width: 100px;
   height: 100px;
   background-color: blue;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px 0;
 }
 
-.box:nth-last-child(1) {
-  margin-right: 0;
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .change-background {
-  
   background-color: red;
+}
+
+@media (max-width: 1225px) {
+  body {
+    text-align: center;
+  }
+
+  .wrapper {
+    justify-content: center;
+  }
 }
